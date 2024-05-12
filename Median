@@ -1,0 +1,28 @@
+import java.util.*;
+class Median
+{
+    public static void main(String []a)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a number of terms");
+        int n=s.nextInt();
+        int []arr=new int[n];
+        System.out.println("Enter the elements of array");
+        int med=0;
+        int pos=0;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=s.nextInt();
+        }
+        Arrays.sort(arr);
+        if(n%2==0)
+        {
+           med=((arr[n/2])+(arr[(n+1)/2]))/2; 
+        }
+        else
+        {
+            med=arr[n/2];
+        }
+        System.out.println("Median is:"+med);
+    }
+}
