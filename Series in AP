@@ -1,0 +1,18 @@
+import java.util.*;
+class Ap
+{
+    public static void main(String []a)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("a1,a2");
+        int a1=s.nextInt();
+        int a2=s.nextInt();
+        int d=a2-a1;
+        System.out.println("Enter the number od terms in series required");
+        int n=s.nextInt();
+        int diff=0;
+        System.out.println("The ap series is:\n");
+       int lt=a1+(n-1)*d;
+        System.out.println(lt);
+    }
+}
