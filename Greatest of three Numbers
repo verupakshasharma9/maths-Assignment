@@ -1,0 +1,32 @@
+import java.util.*;
+class Great 
+{
+    public static int  gat(int n1,int n2,int n3)
+    {
+        if(n1>n2 && n1>n3)
+        {
+            return n1;
+        }
+        else if(n2>n1 && n2>n3)
+        {
+            return n2;
+        }
+        else{
+            return n3;
+        }
+    }
+    public static void main(String []a)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter first number");
+        int n1=s.nextInt();
+        System.out.println("Enter Second number");
+        int n2=s.nextInt();
+        System.out.println("Enter Third number");
+        int n3=s.nextInt();
+        System.out.println("Greatest of three numbers is: "+gat(n1,n2,n3));
+
+
+
+    }
+}
