@@ -1,0 +1,28 @@
+import java.util.*;
+class Arm 
+{
+    public static void main(String []a)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=s.nextInt();
+        int t=n;
+        int r=0;
+        int sum=0;
+        while(n!=0)
+        {
+            r=n%10;
+            sum+=r*r*r;
+            n=n/10;
+            
+        }
+        if(sum==t)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
